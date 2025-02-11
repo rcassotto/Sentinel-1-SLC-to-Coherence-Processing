@@ -1,6 +1,6 @@
 # Sentinel-1-SLC-to-Coherence-Processing
 
-# **Python Script to generate building heights from Sentinel-1 C-Band SAR Layover.** 
+# **Python script / wrapper to process Sentinel-1 Coherence images from SLC zipped files
 
 It is recommended to execute from within a dedicated python environment, such as conda. 
 
@@ -17,5 +17,5 @@ It is recommended to execute from within a dedicated python environment, such as
 - gdal
 <br/>
 
-
-- gdal
+### _Initial Setup Requirements_
+The 
