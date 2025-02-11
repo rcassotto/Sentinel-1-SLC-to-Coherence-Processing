@@ -7,7 +7,7 @@ This script is written as a python wrapper around ESA's (European Space Agency) 
 1) Install ESA's SNAP program, if not already installed (see below).
 2) Install gdal, if not already installed (see below).
 3) Configure a python environment and install necessary dependencies (see below).
-4) Create a dedicated directory for precise and restituted orbits. 
+4) Create a dedicated directory for precise and restituted orbits (e.g. /data/Work/Sentinel1_orbits/aux_poe).
 5) Open a python editor, and perform a search and replace in the _Process_SLC2Coh_wSNAP_v1.0.py_ script for hard-coded paths for the following variables: 
     - **aux_poe**: precise orbit files.
     - **res_orb**: restituted orbit files.
