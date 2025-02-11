@@ -1,6 +1,6 @@
 # Sentinel-1-SLC-to-Coherence-Processing
 
-# **Python script / wrapper to process Sentinel-1 Coherence images from SLC zipped files
+### **Python script / wrapper to process Sentinel-1 Coherence images from SLC zipped files
 
 It is recommended to execute from within a dedicated python environment, such as conda. 
 
