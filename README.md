@@ -18,7 +18,7 @@ This script is written as a python wrapper around ESA's (European Space Agency) 
 
 ### _Non-Python dependencies_
 - ESA's SNAP toolkit (https://step.esa.int/main/download/snap-download/)
-- gdal(https://gdal.org/en/stable/download.html)
+- gdal (https://gdal.org/en/stable/download.html)
 <br/>
 
 ### _Python dependencies_
