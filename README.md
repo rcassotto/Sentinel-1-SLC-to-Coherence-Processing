@@ -30,19 +30,23 @@ It is **_strongly_** recommended to create a dedicated python environment, insta
 - fiona
 <br/>
  
-### _Executing Script_
-To run the script, perform the following:    
+### _Excecuting the Script_
+To generate coherence images from SLC zip files, perform the following:
 
-1) Activate the dedicated python environment
+1) Download necessary orbits. The script is written to automatically download Sentinel-1 orbit files to the user's dedicated orbit directories. However, the location of the Copernicus host changed in 2023. As of Feb 2025, you can obtain Sentinel-1 orbit files through one of two methods:
+- A clever pythonized workaround from Scott Stanie (https://github.com/scottstanie/sentineleof/tree/master).
+- Through AWS: https://registry.opendata.aws/s1-orbits/.
+   
+2) Activate the dedicated python environment
 
-2) Use your favorite text editor to modify the input file (e.g. _FIREDpy_process_coh_input_asc.txt_) for your desired inputs. 
+3) Use your favorite text editor to modify the input file (e.g. _FIREDpy_process_coh_input_asc.txt_) for your desired inputs. 
     - **_slc_file_loc_**: location of SLC zip files.
     - **_roi_polygon_**: for future use. Leave as blank quotes. 
     - **_roi_path_**: for future use. Leave as blank quotes. 
     - **_output_resolution_m_**: desired output resolution in meters. **NOTE higher resolutions will result in longer processing times.**
     - **_sys_index_var_**: starting "Python" index for SLC to Coh processing.  Set to 0 to start from the beginning. Set to a higher integer to continue processing a stack of images, if or when the processing is interrupted. 
 
-3) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**
+4) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**
 
-4) The script will take considerable time to process (hours-days) depending on the output resolution and number of files. It will process several folders and files. The final coherence images will appear in subdirectories witin the "Processed_Data" folder.  The subdirectories for each image will be named with the reference and secondary images as yyyymmddTHHMMSS_yyyymmddTHHMMSS (e.g. 20200806T141458_20200818T141458). 
+5) The script will take considerable time to process (hours-days) depending on the output resolution and number of files. It will process several folders and files. The final coherence images will appear in subdirectories witin the "Processed_Data" folder.  The subdirectories for each image will be named with the reference and secondary images as yyyymmddTHHMMSS_yyyymmddTHHMMSS (e.g. 20200806T141458_20200818T141458). 
        
