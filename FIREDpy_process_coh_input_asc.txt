@@ -1,0 +1,5 @@
+{"slc_file_loc": '/data/Work/rcassotto/NASA_FIREDpy/new_ROIs_ryan/sites/NIFC_2020_OR_S_Obenchain/SLC/fid_40/ASCENDING/',
+"fire_roi_polygon": '',
+"fire_roi_path": '/data/Work/rcassotto/NASA_FIREDpy/new_ROIs_ryan/new_NIFC_fires',
+"output_resolution_m": '10',
+"sys_index_var": '0'}
