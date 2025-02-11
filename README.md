@@ -33,22 +33,24 @@ It is **_strongly_** recommended to create a dedicated python environment, insta
 ### _Excecuting the Script_
 To generate coherence images from SLC zip files, perform the following:
 
-1) Download desired Sentinel-1 SLC files (e.g. from ASF's [Vertex]([url](https://search.asf.alaska.edu/#/)) or [API]([url](https://docs.asf.alaska.edu/api/tools/)) tools.  
+1) Download Sentinel-1 SLC files for your desired region. Be sure to separate Ascending and Descending scenes into separate directories.  ASF has a couple of useful tools for downloading data:
+   - Vertex: https://search.asf.alaska.edu/#/.
+   - API: https://docs.asf.alaska.edu/api/tools/.  
    
-3) Download necessary orbits. The script is written to automatically download Sentinel-1 orbit files to the user's dedicated orbit directories. However, the location of the Copernicus host changed in 2023. As of Feb 2025, you can obtain Sentinel-1 orbit files through one of two methods:
+2) Download necessary orbits. The script is written to automatically download Sentinel-1 orbit files to the user's dedicated orbit directories. However, the location of the Copernicus host changed in 2023. As of Feb 2025, you can obtain Sentinel-1 orbit files through one of two methods:
     - A clever pythonized workaround from Scott Stanie (https://github.com/scottstanie/sentineleof/tree/master).
     - Through AWS: https://registry.opendata.aws/s1-orbits/.
    
-4) Activate the dedicated python environment
+3) Activate the dedicated python environment
 
-5) Use your favorite text editor to modify the input file (e.g. _FIREDpy_process_coh_input_asc.txt_) for your desired inputs. 
+4) Use your favorite text editor to modify the input file (e.g. _FIREDpy_process_coh_input_asc.txt_) for your desired inputs. 
     - **_slc_file_loc_**: location of SLC zip files.
     - **_roi_polygon_**: for future use. Leave as blank quotes. 
     - **_roi_path_**: for future use. Leave as blank quotes. 
     - **_output_resolution_m_**: desired output resolution in meters. **NOTE higher resolutions will result in longer processing times.**
     - **_sys_index_var_**: starting "Python" index for SLC to Coh processing.  Set to 0 to start from the beginning. Set to a higher integer to continue processing a stack of images, if or when the processing is interrupted. 
 
-6) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**
+5) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**
 
-7) The script will take considerable time to process (e.g. hours-days) depending on the output resolution and number of files. It will process several folders and files. The final coherence images will appear in subdirectories witin the "Processed_Data" folder.  The subdirectories for each image will be named with the reference and secondary images as yyyymmddTHHMMSS_yyyymmddTHHMMSS (e.g. 20200806T141458_20200818T141458). 
+The script will take considerable time to process (e.g. hours-days) depending on the output resolution and number of files. It will process several folders and files. The final coherence images will appear in subdirectories witin the "Processed_Data" folder.  The subdirectories for each image will be named with the reference and secondary images as yyyymmddTHHMMSS_yyyymmddTHHMMSS (e.g. 20200806T141458_20200818T141458). 
        
