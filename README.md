@@ -39,8 +39,10 @@ To run the script, perform the following:
     - **_slc_file_loc_**: location of SLC zip files.
     - **_roi_polygon_**: for future use. Leave as blank quotes. 
     - **_roi_path_**: for future use. Leave as blank quotes. 
-    - **_output_resolution_m_**: desired output resolution in meters. **_NOTE_ higher resolutions will result in longer processing times.**
+    - **_output_resolution_m_**: desired output resolution in meters. **NOTE higher resolutions will result in longer processing times.**
     - **_sys_index_var_**: starting "Python" index for SLC to Coh processing.  Set to 0 to start from the beginning. Set to a higher integer to continue processing a stack of images, if or when the processing is interrupted. 
 
-3) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**  
+3) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**
+
+4) The script will take considerable time to process (hours-days) depending on the output resolution and number of files. It will process several folders and files. The final coherence images will appear in subdirectories witin the "Processed_Data" folder.  The subdirectories for each image will be named with the reference and secondary images as yyyymmddTHHMMSS_yyyymmddTHHMMSS (e.g. 20200806T141458_20200818T141458). 
        
