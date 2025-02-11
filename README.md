@@ -36,11 +36,11 @@ To run the script, perform the following:
 1) Activate the dedicated python environment
 
 2) Use your favorite text editor to modify the input file (e.g. _FIREDpy_process_coh_input_asc.txt_) for your desired inputs. 
-- **slc_file_loc**: location of SLC zip files.
-- **roi_polygon**: for future use. Leave as blank quotes. 
-- **roi_path**: for future use. Leave as blank quotes. 
-- **output_resolution_m**: desired output resolution in meters. **_NOTE_ higher resolutions will result in longer processing times.**
-- **sys_index_var**: starting "Python" index for SLC to Coh processing.  Set to 0 to start from the beginning. Set to a higher integer to continue processing a stack of images, if or when the processing is interrupted. 
+    - **slc_file_loc**: location of SLC zip files.
+    - **roi_polygon**: for future use. Leave as blank quotes. 
+    - **roi_path**: for future use. Leave as blank quotes. 
+    - **output_resolution_m**: desired output resolution in meters. **_NOTE_ higher resolutions will result in longer processing times.**
+    - **sys_index_var**: starting "Python" index for SLC to Coh processing.  Set to 0 to start from the beginning. Set to a higher integer to continue processing a stack of images, if or when the processing is interrupted. 
 
 3) Execute the command: **_python3_** **_Process_SLC2Coh_wSNAP_v1.0.py_** **_FIREDpy_process_coh_input_asc.txt_**  
        
