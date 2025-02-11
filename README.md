@@ -9,11 +9,11 @@ This script is written as a python wrapper around ESA's (European Space Agency) 
 3) Configure a python environment and install necessary dependencies (see below).
 4) Create a dedicated directory for precise and restituted orbits. 
 5) Open a python editor, and perform a search and replace for hard-coded paths for the following variables: 
-    - aux_poe: precise orbit files.
-    - res_orb: restituted orbit files.
-    - gdal_ext: full path for the location of gdal_transate.
-    - base_snap_exe: full pathway for ESA SNAP's gpt binary.
-    - workflow_dir: Workflow directory where placed the _extract_map_overlays.sh_ shell script. 
+    - **aux_poe**: precise orbit files.
+    - **res_orb**: restituted orbit files.
+    - **gdal_ext**: full path for the location of gdal_transate.
+    - **base_snap_exe**: full pathway for ESA SNAP's gpt binary.
+    - **workflow_dir**: Workflow directory where placed the _extract_map_overlays.sh_ shell script. 
     
 
 
@@ -24,7 +24,7 @@ This script is written as a python wrapper around ESA's (European Space Agency) 
 
 
 ### _Python dependencies_
-It is *strongly* recommended to create a dedicated python environment, install the necessary dependencies, and execute the scripts from within that environment.  
+It is **strongly** recommended to create a dedicated python environment, install the necessary dependencies, and execute the scripts from within that environment.  
 
 - geopandas
 - shapely
